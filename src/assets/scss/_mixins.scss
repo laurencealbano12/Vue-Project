@@ -1,0 +1,26 @@
+@mixin heading-title {
+  font-weight:bold;
+  font-size:38px;
+  line-height:1.2;
+}
+
+
+@mixin counter-num {
+  counter-increment:counter-num;
+  &::before {
+    content:counter(counter-num);
+    position:absolute;
+    left:0;
+    font-size:30px;
+    top:50%;
+    transform:translateY(-50%);
+    background:#fff;
+    color:$primary;
+    width:35px;
+    text-align:center;
+    line-height:35px;
+    height:35px;
+    z-index:2;
+    border-radius:100%;
+  }
+}

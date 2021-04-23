@@ -1,0 +1,66 @@
+#banner {
+  background:url(~@/assets/images/banner_hero.jpg) no-repeat center top / cover;
+  position: relative;
+  &:after {
+    position:absolute;
+    content:'';
+    left:0;
+    right:0;
+    bottom:0;
+    display:block;
+    margin:0 auto;
+    width:1920px;
+    height:90px;
+    background:url(~@/assets/images/bnr_after.png) no-repeat center top;
+  }
+  .bnr_content {
+    min-height:726px;
+    position: relative;
+    text-align:center;
+
+    .slogan {
+      width:100%;
+      padding:0 15px;
+      position:absolute;
+      top:40%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      margin:0 auto;
+      display:block;
+      color:#fff;
+      h4 {
+        font-size:65px;
+        font-weight:bold;
+        line-height:1.2;
+        span {
+          display:block;
+        }
+      }
+      p {
+        padding:25px 0;
+        font-size:22px;
+        line-height:1;
+      }
+
+      a {
+        height:50px;
+        line-height:50px;
+        color:$primary;
+        font-weight:bold;
+        border-radius:5px;
+        text-align:center;
+        display:block;
+        margin:10px auto 0;
+        width:180px;
+        background:#fff;
+        border:2px solid transparent;
+        transition:all 0.4s linear;
+        &:hover {
+          border:2px solid #fff;
+          background:transparent;
+          color:$white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,142 @@
+#middle {
+  padding:30px 0 40px;
+  text-align:center;
+    
+    .mid_content {
+      h5 {
+        @include heading-title;
+        margin-bottom:3rem;
+      }
+      .mid_mainbox {
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+  
+        [class^="midbox"] {
+          width:49%;
+          min-height:100px;
+          margin-bottom:20px;
+          padding:30px;
+          text-align:left;
+          box-shadow: 0 0 32px rgba(0,0,0,.1);
+          border-radius: 8px;
+          border: 1px solid $bg-color;
+  
+          &:first-child {
+            h4 { &::before {background-image:url(~@/assets/images/mid_icon1.png);}}
+          }
+          &:nth-child(2) {
+            h4 { &::before {background-image:url(~@/assets/images/mid_icon2.png);}}
+          }
+          &:nth-child(3) {
+            h4 { &::before {background-image:url(~@/assets/images/mid_icon3.png);}}
+          }
+          &:nth-child(4) {
+            h4 { &::before {background-image:url(~@/assets/images/mid_icon4.png);}}
+          }
+  
+          h4 {
+            font-size:28px;
+            color:$primary;
+            margin-bottom:25px;
+            font-weight:bold;
+            display:block;
+            &:before {
+              content:'';
+              position: relative;
+              width:35px;
+              height:35px;
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position:center top;
+              display:inline-block;
+              vertical-align:middle;
+              margin-right:15px;
+            }
+          }
+          p {
+            font-size:16px;
+            line-height:1.5;
+          }
+
+          a {
+            display:inline-block;
+            color:$bg-color;
+            text-align:left;
+            font-weight:bold;
+            margin-top:20px;
+            border:1px solid transparent;
+            transition:all 0.3s linear;
+            border:1px solid #dfdfdf;
+            position: relative;
+            &:before, &:after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              transform: scaleX(0);
+              transition: transform .6s cubic-bezier(.25,.46,.45,.94);
+              border:0 solid;
+            }
+            &:before {
+              border-top: 2px solid $bg-color;
+              transform-origin: top left;
+            }
+            &:after {
+              border-bottom: 2px solid $bg-color;
+              transform-origin: top right;
+            }
+            &:hover:before, &:hover:after {
+              transform: scaleX(1);
+              transition: transform .6s cubic-bezier(.25,.46,.45,.94);
+            }
+
+            &:hover small:after, &:hover small:before {
+              transform: scaleY(1);
+              transition: transform .6s cubic-bezier(.25,.46,.45,.94);
+            }
+
+            small {
+              position: relative;
+              height: 50px;
+              width:50px;
+              display:flex;
+              justify-content:center;
+              align-items:center;
+              flex-wrap:wrap;
+              &:before, &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform: scaleX(0);
+                transition: transform .6s cubic-bezier(.25,.46,.45,.94);
+                border:0 solid;
+              }
+              &:before {
+                border-left: 2px solid $bg-color;
+                transform-origin: top left;
+                transform: scaleY(0);
+              }
+              &:after {
+                border-right: 2px solid $bg-color;
+                transform: scaleY(0);
+                transform-origin: bottom left;
+              }
+            }
+
+            svg {
+              transform:rotate(-90deg);
+              fill:$bg-color;
+            }
+        
+          }
+          
+        }
+      }
+    }
+}

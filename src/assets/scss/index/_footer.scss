@@ -1,0 +1,31 @@
+footer {
+  background:radial-gradient(237.06% 215.29% at 142.99% -127.3%,#4b0491 0,#e52451 100%);
+  min-height:80px;
+  padding-bottom:30px;
+  text-align:center;
+  .footer_links {
+    padding-top:20px;
+    ul {
+      li {
+        display:inline-block;
+        vertical-align:top;
+        a {
+          color:#fff;
+          font-size:15px;
+          display:block;
+          line-height:28px;
+          padding:10px 15px;
+
+          &.router-link-exact-active, &:hover {
+            text-decoration:underline;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    font-size:15px;
+    color:#fff;
+  }
+}

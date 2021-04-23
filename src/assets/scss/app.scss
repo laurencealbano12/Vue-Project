@@ -1,0 +1,13 @@
+/* Presets */
+@import "_reset";
+@import "_variables";
+@import "_mixins";
+
+/* Index -> Home styles */
+@import "./index/header";
+@import "./index/nav";
+@import "./index/banner";
+@import "./index/middle";
+@import "./index/main";
+@import "./index/bottom";
+@import "./index/footer";

@@ -1,0 +1,23 @@
+#main_area {
+  padding:20px;
+  main {
+    min-height:300px;
+
+    h2 {
+      @include heading-title;
+      margin-bottom:25px;
+      color:$bg-color;
+    }
+    p {
+      margin-bottom:15px;
+    }
+    a {
+      font-weight:bold;
+      color:$bg-color;
+      text-decoration:none;
+      &:hover {
+        text-decoration:underline;
+      }
+    }
+  }
+}

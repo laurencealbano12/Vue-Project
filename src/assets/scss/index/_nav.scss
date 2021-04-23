@@ -1,0 +1,36 @@
+#nav_area {
+  float:right;
+  text-align:right;
+  color:#fff;
+  padding-right:20%;
+  padding-top:7px;
+  nav {
+    ul {
+      li {
+        display:inline-block;
+        vertical-align:top;
+        position: relative;
+        margin:0 5px;
+        &:first-child {
+          margin-left:0;
+        }
+        &:last-child {
+          margin-right:0;
+        }
+        a {
+          display:block;
+          color: #fff;
+          font-size:14px;
+          padding:5px 10px;
+          line-height:28px;
+          font-weight:bold;
+          letter-spacing:0.5px;
+      
+          &.router-link-exact-active, &:hover {
+            text-decoration:underline;
+          }
+        }
+      }
+    }
+  }
+}
