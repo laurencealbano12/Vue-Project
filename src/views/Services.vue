@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import OtherPageLayout from "../layouts/OtherPageLayout";
+import OtherPageLayout from "@/layouts/OtherPageLayout";
 export default {
   name: "Services",
   components: {

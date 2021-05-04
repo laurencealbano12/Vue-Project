@@ -6,15 +6,22 @@
       only. This will be replaced by individual contents of this section ones
       ready.
     </p>
+
+    <h2>Meet our members:</h2>
+
+    <Members />
   </other-page-layout>
 </template>
 
 <script>
-import OtherPageLayout from "../layouts/OtherPageLayout";
+import OtherPageLayout from "@/layouts/OtherPageLayout";
+import Members from "@/components/about/Members";
+
 export default {
   name: "About",
   components: {
     OtherPageLayout,
+    Members,
   },
 };
 </script>
